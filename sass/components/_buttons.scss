@@ -1,0 +1,10 @@
+@use "../abstracts/abstracts";
+@use '../abstracts/mixins' as mixins;
+
+.button {
+    @include mixins.button();
+}
+
+.link {
+    @include mixins.button-link();
+}

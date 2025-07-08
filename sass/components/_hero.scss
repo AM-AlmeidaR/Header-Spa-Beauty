@@ -1,0 +1,77 @@
+@use '../abstracts/abstracts' as *;
+
+main {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80%;
+}
+
+.hero {
+    size:80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero-img {
+    margin-top: -100px;
+    margin-left: 170px;
+}
+
+.hero-container {
+    width: 810px;
+    height: 390px;
+    margin-top: -880px;
+
+    h1 {
+        color: $darkblue;
+        font-size: 64px;
+        line-height: 80px;
+        font-weight: 700;
+    }
+
+    p.hero-subtitle {
+        width: 750px;
+        padding-top: 35px;
+        color: $grey2;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 400;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+    
+        li {
+
+            a img {
+                background-color: white;
+                
+            }
+
+            a.watch {
+                text-decoration: none;
+                color:$darkblue;
+                margin-left: -25px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-left: -40px;
+        }
+    }
+
+    .hero-btns {
+        width: 450px;
+        height: 60px;
+        padding-top: 60px;
+        margin-left: 40px;
+    }
+}

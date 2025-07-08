@@ -1,0 +1,60 @@
+@forward '../base/reset';
+@use '../abstracts/variables' as *;
+
+@mixin breakpoint($bp) {
+  @if $bp ==tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $bp ==tablet-horizontal {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $bp ==desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $bp ==desktop-xl {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+}
+
+@mixin button($bg-color: $darkblue, $color: white) {
+  display: inline-block;
+  padding: 10px 24px;
+  color: $color;
+  background-color: $bg-color;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}
+
+@mixin button-link() {
+  color: $darkblue;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: underline;
+  line-height: 28px;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    }
+}
+

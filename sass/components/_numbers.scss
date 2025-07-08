@@ -1,0 +1,58 @@
+@use '../abstracts/abstracts' as *;
+@use '../abstracts/variables';
+
+.numbers {
+    width: 600px;
+    height: 250px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 270px;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        margin-top: 8px;
+        max-width: 145px;
+        max-height: 220px;
+    
+        img {
+            max-width: 56px;
+            margin-top: 0;
+        }
+    
+        .card-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            max-width: 145px;
+            margin-top: 24px;
+        }
+    
+        h3,
+        p {
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 36px;
+            color: $darkblue;
+            font-weight: 500;
+            line-height: 100%;
+        }
+
+        p {
+            font-size: 18px;
+            color: $grey2;
+            font-weight: 400;
+            line-height: 100%;
+            margin-top: 16px;
+        }
+    }
+}

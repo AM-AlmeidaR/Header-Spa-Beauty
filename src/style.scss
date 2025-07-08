@@ -1,0 +1,11 @@
+@use './../sass/themes/default';
+@use './../sass/abstracts/abstracts' as *;
+@use './../sass/abstracts/variables';
+@use './../sass/abstracts/mixins' as mixins;
+@use './../sass/components/header';
+@use './../sass/components/buttons' as btn;
+@use './../sass/base/reset';
+@use './../sass/components/hero';
+@use './../sass/components/bottom-box';
+@use './../sass/components/numbers';
+@use './../sass/components/aside';
